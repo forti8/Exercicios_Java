@@ -50,5 +50,18 @@ class Estudante
         return this.tamanhoArray;
     }
 
-    
+    public double menorNota ()
+    {
+        double menor = 11;
+        for(int i = 0; i<this.tamanhoArray; i++)
+        {
+            double nota = this.notas[i];
+            if(nota < menor)
+            {
+                menor = nota;
+            }
+        }
+
+        return menor;
+    }
 }

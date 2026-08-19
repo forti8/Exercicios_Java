@@ -18,6 +18,7 @@ class main
             System.out.println("Nota " + (i+1) + ": "+notasAluno[i]);
         }
 
+        System.out.println("Menor nota: " + aluno.menorNota());
         System.out.println("Média final: " + aluno.calculaMedia());
     }
 }
