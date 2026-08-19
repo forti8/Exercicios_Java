@@ -18,6 +18,7 @@ class Estudante
 
         for (int i = 0; i<this.tamanhoArray; i++)
         {
+            System.out.println("Insira a nota " + (i+1) + " abaixo: ");
             this.notas[i] = meuScanner.nextDouble();
         }
     }
@@ -32,5 +33,20 @@ class Estudante
         }
 
         return (media / this.tamanhoArray);
+    }
+
+    public String getNome ()
+    {
+        return this.nome;
+    }
+
+    public double[] getNotas ()
+    {
+        return this.notas;
+    }
+
+    public int getTamanho ()
+    {
+        return this.tamanhoArray;
     }
 }
