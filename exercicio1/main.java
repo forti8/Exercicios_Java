@@ -1,21 +1,18 @@
-class main
-{
-    public static void main (String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         Estudante aluno = new Estudante("Miguel Granville");
-        
-        String nomeAluno = aluno.getNome();
 
         aluno.insereNotas();
+
+        String nomeAluno = aluno.getNome();
         double[] notasAluno = aluno.getNotas();
-
-        System.out.println("Nome do aluno: "+nomeAluno);
-
         int tamanhoArrayNotas = aluno.getTamanho();
 
-        for(int i = 0; i<tamanhoArrayNotas; i++)
-        {
-            System.out.println("Nota " + (i+1) + ": "+notasAluno[i]);
+        System.out.println("\n--- RESULTADO ---");
+        System.out.println("Nome do aluno: " + nomeAluno);
+
+        for (int i = 0; i < tamanhoArrayNotas; i++) {
+            System.out.println("Nota " + (i + 1) + ": " + notasAluno[i]);
         }
 
         System.out.println("Menor nota: " + aluno.menorNota());
